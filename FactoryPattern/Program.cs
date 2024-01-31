@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("How many wheels do you want?");
+            IVehicle vehicle = VehicleFactory.GetVehicle(Console.ReadLine());
+            vehicle.Drive();
         }
     }
 }
